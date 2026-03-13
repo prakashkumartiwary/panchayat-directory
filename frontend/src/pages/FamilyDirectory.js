@@ -7,7 +7,7 @@ export default function FamilyDirectory(){
  const [members,setMembers]=useState([]);
 
  useEffect(()=>{
-  axios.get("http://localhost:8080/api/members/family/1")
+  axios.get("https://panchayat-directory.onrender.com/api/members/family/1")
   .then(res=>setMembers(res.data))
  },[])
 
